@@ -1,0 +1,6 @@
+"homepage": "http://herndev.github.io/React-Portfolio",
+
+
+,
+"predeploy": "npm run build",
+"deploy": "gh-pages -d build"

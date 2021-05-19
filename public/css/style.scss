@@ -1,0 +1,673 @@
+$socialColors: #3b5998,
+#333,
+#038cc2,
+#f56040;
+$primary: #00aa71;
+$primaryLight: #ccffef;
+$primaryVeryLight: #e9fff8;
+$orange: #efc84a;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    // height: 100vh;
+    background: url("../img/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 16px;
+}
+
+section {
+    min-height: 300px;
+}
+
+.content {
+    min-height: 400px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.glass-card {
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.2));
+    border-radius: 8px;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2rem);
+    overflow: hidden;
+}
+
+// Deprecated
+.nav {
+    .nav-menu {
+        li {
+            float: left;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            a {
+                padding: 0 20px;
+                height: 100%;
+                text-decoration: none;
+                color: black;
+            }
+        }
+        li :hover {
+            background: $primaryVeryLight;
+        }
+        li:first-child {
+            background: $primary;
+            color: white;
+            height: 100%;
+            padding: 8px 15px;
+            font-size: 26px;
+            a {
+                padding: 0;
+            }
+            a i:hover,
+            a:hover {
+                background: $primary !important;
+            }
+        }
+    }
+    .social-menu {
+        ul li {
+            float: left;
+            margin-right: 20px;
+        }
+        .social-icons {
+            font-size: 22px;
+            @for $i from 1 through length($socialColors) - 1 {
+                li:nth-child(#{$i}) {
+                    color: nth($socialColors, $i);
+                }
+            }
+            li:last-child {
+                background: -webkit-linear-gradient(orange, violet);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+}
+
+.nav-menu-active {
+    background: $primaryLight;
+}
+
+.navbar {
+    padding: 0;
+    .container-fluid {
+        padding: 0;
+        .navbar-toggler {
+            margin-right: 8px;
+        }
+    }
+    .goto-home {
+        background: $primary;
+        color: white;
+        height: 100%;
+        padding: 8px 15px;
+        font-size: 25.9px;
+        a {
+            padding: 0;
+        }
+        a i:hover,
+        a:hover {
+            background: $primary !important;
+        }
+    }
+    .nav-menu {
+        li {
+            float: left;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            a {
+                padding: 0 30px;
+                height: 100%;
+                min-height: 40px;
+                text-decoration: none;
+                color: black;
+            }
+        }
+        li :hover {
+            background: $primaryVeryLight;
+        }
+    }
+    .social-menu {
+        ul li {
+            float: left;
+            margin-right: 20px;
+        }
+        .social-icons {
+            a {
+                text-decoration: none;
+            }
+            font-size: 22px;
+            @for $i from 1 through length($socialColors) - 1 {
+                li:nth-child(#{$i}) a {
+                    color: nth($socialColors, $i) !important;
+                }
+            }
+            li:last-child {
+                background: -webkit-linear-gradient(orange, violet);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+}
+
+.side-bar {
+    background: $primary;
+    .name {
+        color: white;
+        font-weight: bold;
+    }
+    .side-banner {
+        background: #fff;
+        clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0 100%);
+        transform: translateY(-20px);
+    }
+    .key-points {
+        transform: translateY(-20px);
+    }
+}
+
+.key-points {
+    ul li {
+        position: relative;
+        /* so that pseudoelements are positioned relatively to their "li"s*/
+        /* use padding-bottom instead of margin-bottom.*/
+        margin-bottom: 0;
+        /* This overrides previously specified margin-bottom */
+        padding-bottom: 0.8em;
+    }
+    ul li.big {
+        padding-bottom: 2.5em;
+    }
+    ul li:after {
+        /* bullets */
+        content: url("../img/1200px-orange_icon_md.svg.png");
+        position: absolute;
+        left: -23px;
+        /*adjust manually*/
+        top: 0px;
+    }
+    ul li.big:after {
+        /* bullets */
+        content: url("../img/web.svg.png");
+        position: absolute;
+        left: -40px;
+        /*adjust manually*/
+        top: -20px;
+    }
+    ul.education li.big:after {
+        /* bullets */
+        content: url("../img/mortarboard.svg.png");
+        position: absolute;
+        left: -40px;
+        /*adjust manually*/
+        top: -20px;
+    }
+    ul.about li.big:after {
+        /* bullets */
+        content: url("../img/1869436.png");
+        position: absolute;
+        left: -40px;
+        /*adjust manually*/
+        top: -20px;
+    }
+    ul li:before {
+        /* lines */
+        content: "";
+        position: absolute;
+        left: -16px;
+        /* adjust manually */
+        border-left: 1px solid $orange;
+        height: 100%;
+        width: 1px;
+    }
+    ul li:first-child:before {
+        /* first li's line */
+        top: 6px;
+        /* moves the line down so that it disappears under the bullet. Adjust manually */
+    }
+    ul li:last-child:before {
+        /* last li's line */
+        height: 6px;
+        /* shorten the line so it goes only up to the bullet. Is equal to first-child:before's top */
+    }
+}
+
+.project-counter-banner {
+    height: 250px;
+}
+
+.project-counter-container {
+    .card {
+        transform: translateY(-42px);
+        z-index: -1;
+    }
+}
+
+.project-counter {
+    border: 0px;
+    overflow: hidden;
+    max-width: 400px;
+    table {
+        th {
+            background: $primary;
+            padding: 8px;
+            padding-top: 15px;
+        }
+    }
+}
+
+.intro-p {
+    max-width: 500px;
+}
+
+#services {
+    // .col-md-4 {
+    .item {
+        height: 400px;
+        padding: 15px;
+        transition: 2s;
+        .card {
+            height: 100%;
+            padding: 20px;
+            border-radius: 25px;
+            .icon-container {
+                height: 70px;
+                width: 70px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50px;
+                border: 2px solid;
+                margin: 0px auto;
+                margin-top: 30px;
+                i {
+                    font-size: 24px;
+                }
+            }
+            .icon-container.active {
+                background-color: $primary;
+                color: white;
+                border-radius: 8px;
+                animation-name: sIconAnim;
+                animation-duration: 0.1s;
+            }
+            h3 {
+                border-bottom: 3px solid white;
+            }
+            h3.active {
+                border-bottom: 3px solid $primary;
+                animation-name: sTitleAnim;
+                animation-duration: 0.1s;
+            }
+        }
+        .card.active {
+            border-radius: 8px;
+            animation-name: sCardAnim;
+            animation-duration: 0.1s;
+        }
+    }
+}
+
+// ---------------------- RESUME ----------------------
+#resume {
+    .key-points {
+        margin-top: 50px;
+    }
+}
+
+// ---------------------- PORTFOLIO ----------------------
+#portfolio {
+    .nav-tab ul {
+        li {
+            border-top: 3px solid transparent;
+        }
+        li.active {
+            border-bottom: 3px solid $primary;
+        }
+    }
+}
+
+// ---------------------- Display ----------------------
+.display-none,
+.tns-outer>button {
+    display: none;
+}
+
+.display-inline {
+    display: inline;
+}
+
+.display-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.display-centery {
+    display: flex;
+    align-items: center;
+}
+
+.display-centerx {
+    display: flex;
+    justify-content: center;
+}
+
+.visible-md,
+.visible-lg {
+    display: none;
+}
+
+.h-100 {
+    height: 100% !important;
+}
+
+// ---------------------- Backgrounds ----------------------
+.bg-primary-default {
+    background: $primary;
+}
+
+// ---------------------- Text ----------------------
+.text-yellow {
+    color: yellow;
+}
+
+.text-primary-default {
+    color: $primary;
+}
+
+.text-orange {
+    color: $orange;
+}
+
+// ---------------------- Others ----------------------
+.crv-8 {
+    border-radius: 8px;
+}
+
+.crv-25 {
+    border-radius: 25px;
+}
+
+.crv-50 {
+    border-radius: 50px;
+}
+
+.bx-shadow {
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.5);
+}
+
+.underline-yellow {
+    border-bottom: 2px solid $orange;
+}
+
+.underline-primary {
+    border-bottom: 2px solid $primary;
+}
+
+.brb-anim:after {
+    content: "";
+    /* This is necessary for the pseudo element to work. */
+    display: block;
+    /* This will put the pseudo element on its own line. */
+    width: 10%;
+    /* Change this to whatever width you want to have before hover. */
+    padding-top: 20px;
+    /* This creates some space between the element and the border. */
+    border-bottom: 5px solid $primary;
+    /* This creates the border. Replace black with whatever color you want. */
+    transition: 0.5s;
+    /* This establishes the amount of time in seconds the animation should take from start to finish */
+    margin: 0px auto;
+}
+
+.brb-anim:hover:after {
+    width: 25%;
+}
+
+.brb-anim-s:after {
+    content: "";
+    /* This is necessary for the pseudo element to work. */
+    display: block;
+    /* This will put the pseudo element on its own line. */
+    width: 50px;
+    /* Change this to whatever width you want to have before hover. */
+    padding-top: 20px;
+    /* This creates some space between the element and the border. */
+    border-bottom: 5px solid $primary;
+    /* This creates the border. Replace black with whatever color you want. */
+    transition: 0.5s;
+    /* This establishes the amount of time in seconds the animation should take from start to finish */
+    margin: 0px auto;
+}
+
+.brb-anim-s:hover:after {
+    width: 230px;
+}
+
+// ---------------------- Animations ----------------------
+.opacityAnimation {
+    opacity: 1;
+    animation-name: opaAnim;
+    animation-duration: 1s;
+}
+
+.dividerAnimation {
+    animation-name: hrAnim;
+    animation-duration: 2s;
+}
+
+.dividerAnimationR {
+    animation-name: hrAnimR;
+    animation-duration: 2s;
+}
+
+// .divider {
+//     hr:nth-child(2) {
+//         width: 100%;
+//         position: relative;
+//         top: 25px;
+//         border: 1px solid $cyan;
+//         transform: translateX(-2px);
+//     }
+//     hr:nth-child(1) {
+//         float: right;
+//         width: 150px;
+//         border: 5px solid $cyan;
+//     }
+// }
+// Animation Keyframes
+@keyframes opaAnim {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes hrAnim {
+    0% {
+        transform: translateX(0%);
+    }
+    50% {
+        transform: translateX(80%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes hrAnimR {
+    0% {
+        transform: translateX(-2px);
+    }
+    50% {
+        transform: translateX(-80%);
+    }
+    100% {
+        transform: translateX(-2px);
+    }
+}
+
+@keyframes sIconAnim {
+    from {
+        background-color: white;
+        color: black;
+        border-radius: 50px;
+    }
+    to {
+        background-color: $primary;
+        color: white;
+        border-radius: 8px;
+    }
+}
+
+@keyframes sTitleAnim {
+    from {
+        border-bottom: 3px solid white;
+    }
+    to {
+        border-bottom: 3px solid $primary;
+    }
+}
+
+@keyframes sCardAnim {
+    from {
+        border-radius: 25px;
+    }
+    to {
+        border-radius: 8px;
+    }
+}
+
+//----------------------------- Media queries ------------------------
+// Larger screen view
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1400px;
+    }
+    .mt-dynamic {
+        margin-top: 45px;
+    }
+}
+
+// Large screen view
+@media (min-width: 1000px) and (max-width: 1400px) {
+    .container {
+        max-width: 990px;
+    }
+    .mt-dynamic {
+        margin-top: 35px;
+    }
+}
+
+// Tablet view
+@media (min-width: 768px) and (max-width: 1000px) {
+    .container {
+        max-width: 760px;
+    }
+    .mt-dynamic {
+        margin-top: 20px;
+    }
+    .visible-lg {
+        display: block;
+    }
+    .hidden-lg {
+        display: none;
+    }
+    .navbar {
+        #navbarCollapse {
+            background: rgb(248, 248, 248);
+        }
+        .nav-menu {
+            li {
+                float: none;
+                display: block;
+            }
+        }
+        .social-menu {
+            margin-right: auto;
+            .social-icons {
+                font-size: 28px;
+            }
+        }
+    }
+    #footer .copyright-text {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+// Mobile view
+@media (min-width: 0px) and (max-width: 768px) {
+    .visible-md,
+    .visible-lg {
+        display: block;
+    }
+    .hidden-md {
+        display: none;
+    }
+    .hidden-lg {
+        display: none;
+    }
+    // remove padding
+    .rp-md-0 {
+        padding: 0 !important;
+    }
+    // remove margin
+    .rm-md-0 {
+        margin: 0 !important;
+    }
+    // remove curve edges
+    .rcrv-md-0 {
+        border-radius: 0px !important;
+    }
+    .res-nav {
+        border-radius: 0px;
+        box-shadow: none !important;
+    }
+    .glass-card {
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+        border-radius: 0px;
+    }
+    .navbar {
+        #navbarCollapse {
+            background: rgb(248, 248, 248);
+        }
+        .nav-menu {
+            li {
+                float: none;
+                display: block;
+            }
+        }
+        .social-menu {
+            margin-right: auto;
+            .social-icons {
+                font-size: 28px;
+            }
+        }
+    }
+    #footer .copyright-text {
+        width: 100%;
+        text-align: center;
+    }
+    .container {
+        margin-bottom: 0 !important;
+    }
+}

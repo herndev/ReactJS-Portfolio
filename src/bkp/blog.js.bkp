@@ -1,0 +1,28 @@
+// import React, { useState, useEffect } from 'react';
+
+// function Blog() {
+
+//     const getBlogs = async () => {
+//         const response = await fetch('http://hernie.me/wp-json/wp/v2/posts')
+//         .then(response => response.json())
+//         .then(data => console.log(data));
+
+//     }
+
+//     // On page load
+//     useEffect(() => {
+//         getBlogs();
+//     }, []);
+
+//     return (
+//         <div id="blog" className="">
+//             <section className="p-3">
+//                 <h4 className="font-weight-bold text-primary-default display-inline">
+//                     Blog
+//                 </h4>
+//             </section>
+//         </div>
+//     );
+// }
+
+// export default Blog;

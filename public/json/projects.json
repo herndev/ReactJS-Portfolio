@@ -1,0 +1,239 @@
+{
+    "others": [{
+            "key": 1,
+            "project": "Skeleton Loading",
+            "screenshot": "img/projects/others/skeleton-loading.jpg",
+            "date": "2020",
+            "description": "Built using Sass, a very usefull loading animation that can be implemented to any website.",
+            "status": "available",
+            "tag": "others"
+        },
+        {
+            "key": 2,
+            "project": "HERN DB",
+            "screenshot": "img/projects/others/hern_db.png",
+            "date": "2019",
+            "description": "Local database module/desktop app for python. Easy to use and implement to any python projects.",
+            "status": "available",
+            "tag": "others"
+        },
+        {
+            "key": 3,
+            "project": "Chat Bot",
+            "screenshot": "img/projects/others/chatbot.png",
+            "date": "2020",
+            "description": "Chat bot built in python with neural network structure to produce better AI response.",
+            "status": "available",
+            "tag": "others"
+        }
+    ],
+    "web": [{
+            "key": 4,
+            "project": "Notepadx+",
+            "screenshot": "img/projects/web/notepadx+.png",
+            "date": "2020",
+            "description": "Secured and user friendly online notepad. Free and easy to use built using Laravel framework",
+            "status": "available",
+            "tag": "web"
+        },
+        {
+            "key": 5,
+            "project": "Laravel Portfolio",
+            "screenshot": "img/projects/web/portfolio.png",
+            "date": "2020",
+            "description": "Personal portfolio built using Laravel framework with bootsrap.",
+            "status": "available",
+            "tag": "web"
+        },
+        {
+            "key": 6,
+            "project": "Space",
+            "screenshot": "img/projects/web/space.png",
+            "date": "2020",
+            "description": "Fully interactive parallax designed website built using Laravel.",
+            "status": "available",
+            "tag": "web"
+        },
+        {
+            "key": 7,
+            "project": "Westland",
+            "screenshot": "img/projects/web/westland.png",
+            "date": "2020",
+            "description": "PSD to Website built using bootstrap, Sass, Jquery and Gimp",
+            "status": "available",
+            "tag": "web"
+        },
+        {
+            "key": 8,
+            "project": "HLink",
+            "screenshot": "img/projects/web/hlink.png",
+            "date": "2021",
+            "description": "File hosting and  Short link provider built using Laravel with PostgresSQL hosted in heroku. Integrated with google drive API",
+            "status": "available",
+            "tag": "web"
+        },
+        {
+            "key": 9,
+            "project": "Wordpress Portfolio",
+            "screenshot": "img/projects/web/wordpress_portfolio.png",
+            "date": "2021",
+            "description": "Personal portfolio/blogging site built in Wordpress framework with bootsrap.",
+            "status": "available",
+            "tag": "web"
+        },
+        {
+            "key": 10,
+            "project": "Weefood Bouquet",
+            "screenshot": "img/projects/web/weefood_bouquet.png",
+            "date": "2020",
+            "description": "E-commere website food delivery with virtual payment method built in Laravel.",
+            "status": "unavailable",
+            "tag": "web"
+        },
+        {
+            "key": 11,
+            "project": "JJ Shoe",
+            "screenshot": "img/projects/web/jj_shoe.png",
+            "date": "2020",
+            "description": "Simple shoe store landing page with materialize design. Built using (Html/CSS/Javascript)",
+            "status": "available",
+            "tag": "web"
+        }
+    ],
+    "mobile": [{
+            "key": 12,
+            "project": "Student Planner",
+            "screenshot": "img/projects/mobile/student_planner.png",
+            "date": "2020",
+            "description": "Subject scheduler app for student with notes functionality and tells the user what's the next subject and the remaining time before it starts.",
+            "status": "unavailable",
+            "tag": "mobile"
+        },
+        {
+            "key": 13,
+            "project": "SUGO",
+            "screenshot": "img/projects/mobile/sugo.png",
+            "date": "2020",
+            "description": "E-commerce in demand servicing mobile application for both client and rider, designed to easily contact a rider to do a specific task.",
+            "status": "unavailable",
+            "tag": "mobile"
+        },
+        {
+            "key": 14,
+            "project": "Trace Me",
+            "screenshot": "img/projects/mobile/trace_me.png",
+            "date": "2020",
+            "description": "Contact tracing app for both consumers and employees works as a scanner and QRcode generator.",
+            "status": "available",
+            "tag": "mobile"
+        },
+        {
+            "key": 15,
+            "project": "Super App",
+            "screenshot": "img/projects/mobile/super_app.png",
+            "date": "2018",
+            "description": "Powerful mobile terminal with numbers of commands for shortcuts, changing settings and perform specific function.",
+            "status": "unavailable",
+            "tag": "mobile"
+        },
+        {
+            "key": 16,
+            "project": "Networking Quiz",
+            "screenshot": "img/projects/mobile/networking_quiz.png",
+            "date": "2021",
+            "description": "Quiz app specifically for networking built with Flutter with Laravel API implemented.",
+            "status": "unavailable",
+            "tag": "mobile"
+        },
+        {
+            "key": 17,
+            "project": "Learnify",
+            "screenshot": "img/projects/mobile/learnify.png",
+            "date": "2021",
+            "description": "Quiz app with certain categories built with Flutter with Laravel API implemented.",
+            "status": "unavailable",
+            "tag": "mobile"
+        },
+        {
+            "key": 18,
+            "project": "Cannon Shoot",
+            "screenshot": "img/projects/mobile/cannon_shoot.png",
+            "date": "2017",
+            "description": "Cannon shooting game the goal is to shoot the rocket bullet before hitting your ship.",
+            "status": "unavailable",
+            "tag": "mobile"
+        },
+        {
+            "key": 19,
+            "project": "Gamblerxx",
+            "screenshot": "img/projects/mobile/gamblerxx.png",
+            "date": "2018",
+            "description": "Single player gambling app with cool classic mechanics and games.",
+            "status": "unavailable",
+            "tag": "mobile"
+        },
+        {
+            "key": 20,
+            "project": "Hack Game",
+            "screenshot": "img/projects/mobile/hack_game.png",
+            "date": "2017",
+            "description": "Simulates a hacking business, hiring  a hacker and let them work for you to unlock other slots.",
+            "status": "unavailable",
+            "tag": "mobile"
+        },
+        {
+            "key": 21,
+            "project": "Install It",
+            "screenshot": "img/projects/mobile/install_it.png",
+            "date": "2017",
+            "description": "OS installation simulator for android.",
+            "status": "unavailable",
+            "tag": "mobile"
+        },
+        {
+            "key": 22,
+            "project": "File Ko",
+            "screenshot": "img/projects/mobile/file_ko.png",
+            "date": "2018",
+            "description": "Basic file manager app to manage files.",
+            "status": "unavailable",
+            "tag": "mobile"
+        },
+        {
+            "key": 23,
+            "project": "IT Toolxx",
+            "screenshot": "img/projects/mobile/it_toolxx.png",
+            "date": "2018",
+            "description": "Contains useful IT tools combined to a single app such as HTML/CSS/Js compiler, python compiler, and Decimal/Binary/Hexa/Octal converter with solution.",
+            "status": "unavailable",
+            "tag": "mobile"
+        },
+        {
+            "key": 24,
+            "project": "M_wiz Browser",
+            "screenshot": "img/projects/mobile/mwiz_browser.png",
+            "date": "2017",
+            "description": "Classic browser with simple design and added assistant touch and other useful features.",
+            "status": "unavailable",
+            "tag": "mobile"
+        },
+        {
+            "key": 25,
+            "project": "PLDT Wifi password generator",
+            "screenshot": "img/projects/mobile/pldt_wifi.png",
+            "date": "2017",
+            "description": "Generates default PLDT wifi password, calculated base on the device model.",
+            "status": "unavailable",
+            "tag": "mobile"
+        },
+        {
+            "key": 26,
+            "project": "Chat Bot",
+            "screenshot": "img/projects/mobile/chat_bot_mobile.png",
+            "date": "2018",
+            "description": "Chatbot mobile application works like a dictionary that returns the response base on user input that serves as a key.",
+            "status": "unavailable",
+            "tag": "mobile"
+        }
+    ]
+}

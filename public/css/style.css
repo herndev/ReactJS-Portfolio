@@ -1,0 +1,789 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: url("../img/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 16px;
+}
+
+section {
+  min-height: 300px;
+}
+
+.content {
+  min-height: 400px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.glass-card {
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.2)));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.2));
+  border-radius: 8px;
+  -webkit-box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.5);
+          box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(2rem);
+          backdrop-filter: blur(2rem);
+  overflow: hidden;
+}
+
+.nav .nav-menu li {
+  float: left;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav .nav-menu li a {
+  padding: 0 20px;
+  height: 100%;
+  text-decoration: none;
+  color: black;
+}
+
+.nav .nav-menu li :hover {
+  background: #e9fff8;
+}
+
+.nav .nav-menu li:first-child {
+  background: #00aa71;
+  color: white;
+  height: 100%;
+  padding: 8px 15px;
+  font-size: 26px;
+}
+
+.nav .nav-menu li:first-child a {
+  padding: 0;
+}
+
+.nav .nav-menu li:first-child a i:hover,
+.nav .nav-menu li:first-child a:hover {
+  background: #00aa71 !important;
+}
+
+.nav .social-menu ul li {
+  float: left;
+  margin-right: 20px;
+}
+
+.nav .social-menu .social-icons {
+  font-size: 22px;
+}
+
+.nav .social-menu .social-icons li:nth-child(1) {
+  color: #3b5998;
+}
+
+.nav .social-menu .social-icons li:nth-child(2) {
+  color: #333;
+}
+
+.nav .social-menu .social-icons li:nth-child(3) {
+  color: #038cc2;
+}
+
+.nav .social-menu .social-icons li:last-child {
+  background: -webkit-linear-gradient(orange, violet);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-menu-active {
+  background: #ccffef;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navbar .container-fluid {
+  padding: 0;
+}
+
+.navbar .container-fluid .navbar-toggler {
+  margin-right: 8px;
+}
+
+.navbar .goto-home {
+  background: #00aa71;
+  color: white;
+  height: 100%;
+  padding: 8px 15px;
+  font-size: 25.9px;
+}
+
+.navbar .goto-home a {
+  padding: 0;
+}
+
+.navbar .goto-home a i:hover,
+.navbar .goto-home a:hover {
+  background: #00aa71 !important;
+}
+
+.navbar .nav-menu li {
+  float: left;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .nav-menu li a {
+  padding: 0 30px;
+  height: 100%;
+  min-height: 40px;
+  text-decoration: none;
+  color: black;
+}
+
+.navbar .nav-menu li :hover {
+  background: #e9fff8;
+}
+
+.navbar .social-menu ul li {
+  float: left;
+  margin-right: 20px;
+}
+
+.navbar .social-menu .social-icons {
+  font-size: 22px;
+}
+
+.navbar .social-menu .social-icons a {
+  text-decoration: none;
+}
+
+.navbar .social-menu .social-icons li:nth-child(1) a {
+  color: #3b5998 !important;
+}
+
+.navbar .social-menu .social-icons li:nth-child(2) a {
+  color: #333 !important;
+}
+
+.navbar .social-menu .social-icons li:nth-child(3) a {
+  color: #038cc2 !important;
+}
+
+.navbar .social-menu .social-icons li:last-child {
+  background: -webkit-linear-gradient(orange, violet);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.side-bar {
+  background: #00aa71;
+}
+
+.side-bar .name {
+  color: white;
+  font-weight: bold;
+}
+
+.side-bar .side-banner {
+  background: #fff;
+  -webkit-clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0 100%);
+          clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0 100%);
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+.side-bar .key-points {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+.key-points ul li {
+  position: relative;
+  /* so that pseudoelements are positioned relatively to their "li"s*/
+  /* use padding-bottom instead of margin-bottom.*/
+  margin-bottom: 0;
+  /* This overrides previously specified margin-bottom */
+  padding-bottom: 0.8em;
+}
+
+.key-points ul li.big {
+  padding-bottom: 2.5em;
+}
+
+.key-points ul li:after {
+  /* bullets */
+  content: url("../img/1200px-orange_icon_md.svg.png");
+  position: absolute;
+  left: -23px;
+  /*adjust manually*/
+  top: 0px;
+}
+
+.key-points ul li.big:after {
+  /* bullets */
+  content: url("../img/web.svg.png");
+  position: absolute;
+  left: -40px;
+  /*adjust manually*/
+  top: -20px;
+}
+
+.key-points ul.education li.big:after {
+  /* bullets */
+  content: url("../img/mortarboard.svg.png");
+  position: absolute;
+  left: -40px;
+  /*adjust manually*/
+  top: -20px;
+}
+
+.key-points ul.about li.big:after {
+  /* bullets */
+  content: url("../img/1869436.png");
+  position: absolute;
+  left: -40px;
+  /*adjust manually*/
+  top: -20px;
+}
+
+.key-points ul li:before {
+  /* lines */
+  content: "";
+  position: absolute;
+  left: -16px;
+  /* adjust manually */
+  border-left: 1px solid #efc84a;
+  height: 100%;
+  width: 1px;
+}
+
+.key-points ul li:first-child:before {
+  /* first li's line */
+  top: 6px;
+  /* moves the line down so that it disappears under the bullet. Adjust manually */
+}
+
+.key-points ul li:last-child:before {
+  /* last li's line */
+  height: 6px;
+  /* shorten the line so it goes only up to the bullet. Is equal to first-child:before's top */
+}
+
+.project-counter-banner {
+  height: 250px;
+}
+
+.project-counter-container .card {
+  -webkit-transform: translateY(-42px);
+          transform: translateY(-42px);
+  z-index: -1;
+}
+
+.project-counter {
+  border: 0px;
+  overflow: hidden;
+  max-width: 400px;
+}
+
+.project-counter table th {
+  background: #00aa71;
+  padding: 8px;
+  padding-top: 15px;
+}
+
+.intro-p {
+  max-width: 500px;
+}
+
+#services .item {
+  height: 400px;
+  padding: 15px;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+#services .item .card {
+  height: 100%;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+#services .item .card .icon-container {
+  height: 70px;
+  width: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50px;
+  border: 2px solid;
+  margin: 0px auto;
+  margin-top: 30px;
+}
+
+#services .item .card .icon-container i {
+  font-size: 24px;
+}
+
+#services .item .card .icon-container.active {
+  background-color: #00aa71;
+  color: white;
+  border-radius: 8px;
+  -webkit-animation-name: sIconAnim;
+          animation-name: sIconAnim;
+  -webkit-animation-duration: 0.1s;
+          animation-duration: 0.1s;
+}
+
+#services .item .card h3 {
+  border-bottom: 3px solid white;
+}
+
+#services .item .card h3.active {
+  border-bottom: 3px solid #00aa71;
+  -webkit-animation-name: sTitleAnim;
+          animation-name: sTitleAnim;
+  -webkit-animation-duration: 0.1s;
+          animation-duration: 0.1s;
+}
+
+#services .item .card.active {
+  border-radius: 8px;
+  -webkit-animation-name: sCardAnim;
+          animation-name: sCardAnim;
+  -webkit-animation-duration: 0.1s;
+          animation-duration: 0.1s;
+}
+
+#resume .key-points {
+  margin-top: 50px;
+}
+
+#portfolio .nav-tab ul li {
+  border-top: 3px solid transparent;
+}
+
+#portfolio .nav-tab ul li.active {
+  border-bottom: 3px solid #00aa71;
+}
+
+.display-none,
+.tns-outer > button {
+  display: none;
+}
+
+.display-inline {
+  display: inline;
+}
+
+.display-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.display-centery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.display-centerx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.visible-md,
+.visible-lg {
+  display: none;
+}
+
+.h-100 {
+  height: 100% !important;
+}
+
+.bg-primary-default {
+  background: #00aa71;
+}
+
+.text-yellow {
+  color: yellow;
+}
+
+.text-primary-default {
+  color: #00aa71;
+}
+
+.text-orange {
+  color: #efc84a;
+}
+
+.crv-8 {
+  border-radius: 8px;
+}
+
+.crv-25 {
+  border-radius: 25px;
+}
+
+.crv-50 {
+  border-radius: 50px;
+}
+
+.bx-shadow {
+  -webkit-box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.5);
+          box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.5);
+}
+
+.underline-yellow {
+  border-bottom: 2px solid #efc84a;
+}
+
+.underline-primary {
+  border-bottom: 2px solid #00aa71;
+}
+
+.brb-anim:after {
+  content: "";
+  /* This is necessary for the pseudo element to work. */
+  display: block;
+  /* This will put the pseudo element on its own line. */
+  width: 10%;
+  /* Change this to whatever width you want to have before hover. */
+  padding-top: 20px;
+  /* This creates some space between the element and the border. */
+  border-bottom: 5px solid #00aa71;
+  /* This creates the border. Replace black with whatever color you want. */
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  /* This establishes the amount of time in seconds the animation should take from start to finish */
+  margin: 0px auto;
+}
+
+.brb-anim:hover:after {
+  width: 25%;
+}
+
+.brb-anim-s:after {
+  content: "";
+  /* This is necessary for the pseudo element to work. */
+  display: block;
+  /* This will put the pseudo element on its own line. */
+  width: 50px;
+  /* Change this to whatever width you want to have before hover. */
+  padding-top: 20px;
+  /* This creates some space between the element and the border. */
+  border-bottom: 5px solid #00aa71;
+  /* This creates the border. Replace black with whatever color you want. */
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  /* This establishes the amount of time in seconds the animation should take from start to finish */
+  margin: 0px auto;
+}
+
+.brb-anim-s:hover:after {
+  width: 230px;
+}
+
+.opacityAnimation {
+  opacity: 1;
+  -webkit-animation-name: opaAnim;
+          animation-name: opaAnim;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.dividerAnimation {
+  -webkit-animation-name: hrAnim;
+          animation-name: hrAnim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.dividerAnimationR {
+  -webkit-animation-name: hrAnimR;
+          animation-name: hrAnimR;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes opaAnim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes opaAnim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes hrAnim {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  50% {
+    -webkit-transform: translateX(80%);
+            transform: translateX(80%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes hrAnim {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  50% {
+    -webkit-transform: translateX(80%);
+            transform: translateX(80%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes hrAnimR {
+  0% {
+    -webkit-transform: translateX(-2px);
+            transform: translateX(-2px);
+  }
+  50% {
+    -webkit-transform: translateX(-80%);
+            transform: translateX(-80%);
+  }
+  100% {
+    -webkit-transform: translateX(-2px);
+            transform: translateX(-2px);
+  }
+}
+
+@keyframes hrAnimR {
+  0% {
+    -webkit-transform: translateX(-2px);
+            transform: translateX(-2px);
+  }
+  50% {
+    -webkit-transform: translateX(-80%);
+            transform: translateX(-80%);
+  }
+  100% {
+    -webkit-transform: translateX(-2px);
+            transform: translateX(-2px);
+  }
+}
+
+@-webkit-keyframes sIconAnim {
+  from {
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+  }
+  to {
+    background-color: #00aa71;
+    color: white;
+    border-radius: 8px;
+  }
+}
+
+@keyframes sIconAnim {
+  from {
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+  }
+  to {
+    background-color: #00aa71;
+    color: white;
+    border-radius: 8px;
+  }
+}
+
+@-webkit-keyframes sTitleAnim {
+  from {
+    border-bottom: 3px solid white;
+  }
+  to {
+    border-bottom: 3px solid #00aa71;
+  }
+}
+
+@keyframes sTitleAnim {
+  from {
+    border-bottom: 3px solid white;
+  }
+  to {
+    border-bottom: 3px solid #00aa71;
+  }
+}
+
+@-webkit-keyframes sCardAnim {
+  from {
+    border-radius: 25px;
+  }
+  to {
+    border-radius: 8px;
+  }
+}
+
+@keyframes sCardAnim {
+  from {
+    border-radius: 25px;
+  }
+  to {
+    border-radius: 8px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1400px;
+  }
+  .mt-dynamic {
+    margin-top: 45px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1400px) {
+  .container {
+    max-width: 990px;
+  }
+  .mt-dynamic {
+    margin-top: 35px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  .container {
+    max-width: 760px;
+  }
+  .mt-dynamic {
+    margin-top: 20px;
+  }
+  .visible-lg {
+    display: block;
+  }
+  .hidden-lg {
+    display: none;
+  }
+  .navbar #navbarCollapse {
+    background: #f8f8f8;
+  }
+  .navbar .nav-menu li {
+    float: none;
+    display: block;
+  }
+  .navbar .social-menu {
+    margin-right: auto;
+  }
+  .navbar .social-menu .social-icons {
+    font-size: 28px;
+  }
+  #footer .copyright-text {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .visible-md,
+  .visible-lg {
+    display: block;
+  }
+  .hidden-md {
+    display: none;
+  }
+  .hidden-lg {
+    display: none;
+  }
+  .rp-md-0 {
+    padding: 0 !important;
+  }
+  .rm-md-0 {
+    margin: 0 !important;
+  }
+  .rcrv-md-0 {
+    border-radius: 0px !important;
+  }
+  .res-nav {
+    border-radius: 0px;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+  }
+  .glass-card {
+    -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 0px;
+  }
+  .navbar #navbarCollapse {
+    background: #f8f8f8;
+  }
+  .navbar .nav-menu li {
+    float: none;
+    display: block;
+  }
+  .navbar .social-menu {
+    margin-right: auto;
+  }
+  .navbar .social-menu .social-icons {
+    font-size: 28px;
+  }
+  #footer .copyright-text {
+    width: 100%;
+    text-align: center;
+  }
+  .container {
+    margin-bottom: 0 !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
