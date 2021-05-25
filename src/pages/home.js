@@ -3,29 +3,31 @@ import TinySlider from "tiny-slider-react";
 
 function Home() {
   const projects = {
-    "web": 13,
-    "mobile": 34,
+    "web": 24,
+    "mobile": 43,
   };
 
   const settings = {
     lazyload: true,
     nav: false,
-    mouseDrag: true,
+    // mouseDrag: true,
     controls: false,
     items: 3,
-    slideBy: 1,
     autoplay: true,
     loop: true,
     autoplayTimeout: 10000,
     autoplayHoverPause: true,
+    slideBy: 1,
+    swipeAngle: false,
+    speed: 400,
     responsive: {
-      "0":{
+      "0": {
         items: 1
       },
-      "990":{
+      "990": {
         items: 2
       },
-      "1400":{
+      "1400": {
         items: 3
       }
     }
@@ -53,7 +55,7 @@ function Home() {
         <div className="row px-3">
           <div className="col-md">
             <TinySlider settings={settings}>
-              <div className="item">
+              <div className="item noselect">
                 <div className="card sh-s">
                   <div className="card-title">
                     <div className="icon-container">
@@ -66,7 +68,7 @@ function Home() {
                               </p>
                 </div>
               </div>
-              <div className="item">
+              <div className="item noselect">
                 <div className="card sh-s">
                   <div className="card-title">
                     <div className="icon-container">
@@ -79,7 +81,7 @@ function Home() {
                               </p>
                 </div>
               </div>
-              <div className="item">
+              <div className="item noselect">
                 <div className="card sh-s">
                   <div className="card-title">
                     <div className="icon-container">
@@ -92,7 +94,7 @@ function Home() {
                               </p>
                 </div>
               </div>
-              <div className="item">
+              <div className="item noselect">
                 <div className="card sh-s">
                   <div className="card-title">
                     <div className="icon-container">

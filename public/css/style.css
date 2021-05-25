@@ -523,6 +523,25 @@ section {
   width: 230px;
 }
 
+li.dot {
+  background: #00aa71 !important;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+}
+
 .opacityAnimation {
   opacity: 1;
   -webkit-animation-name: opaAnim;

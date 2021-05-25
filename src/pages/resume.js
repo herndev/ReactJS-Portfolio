@@ -1,20 +1,8 @@
 import React from 'react';
-import TinySlider from "tiny-slider-react";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
 function Resume() {
-
-  const settings = {
-    lazyload: true,
-    nav: false,
-    mouseDrag: true,
-    controls: false,
-    items: 1,
-    slideBy: 1,
-    autoplay: true,
-    loop: true,
-    autoplayTimeout: 5000,
-    autoplayHoverPause: true,
-  };
 
   return (
     <div id="resume">
@@ -75,7 +63,7 @@ function Resume() {
                 <span className="font-weight-bold text-orange">Phone:</span> <br />+639397724280
                                         </p>
               <p className="mb-2">
-                <span className="font-weight-bold text-orange">Email:</span> <br />herniejabien@yes.my
+                <span className="font-weight-bold text-orange">Email:</span> <br />herniejabien45@gmail.com
                                         </p>
               <p className="mb-2">
                 <span className="font-weight-bold text-orange">Birth date:</span> <br />October 11, 1999
@@ -97,7 +85,7 @@ function Resume() {
       <section className="p-3">
         <h5 className="font-weight-bold ml-3 underline-primary display-inline">CERTIFICATES</h5>
         <div className="px-3 mt-3">
-          <TinySlider settings={settings}>
+          <Carousel autoPlay interval="5000" showIndicators={false} infiniteLoop transitionTime="500" showStatus={false} showArrows={false} emulateTouch showThumbs={false}>
             <div className="item">
               <img src="img/certificates/frontend.png" alt="" className="img-fluid" />
             </div>
@@ -125,7 +113,10 @@ function Resume() {
             <div className="item">
               <img src="img/certificates/wordpress.jpg" alt="" className="img-fluid" />
             </div>
-          </TinySlider>
+            <div className="item">
+              <img src="img/certificates/firebase.jpg" alt="" className="img-fluid" />
+            </div>
+          </Carousel>
         </div>
       </section>
     </div>

@@ -18,7 +18,7 @@ function SideBar() {
                     <li>
                         <span className="font-weight-bold">Contact: </span><br />
                         <i className="ion-email text-white"></i>
-                        <span className="ml-2">herniejabien@yes.my</span><br />
+                        <span className="ml-2">herniejabien45@gmail.com</span><br />
                         <i className="ion-ios-telephone text-white"></i>
                         <span className="ml-2">09397724280</span>
                     </li>
