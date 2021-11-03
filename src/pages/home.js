@@ -3,8 +3,8 @@ import TinySlider from "tiny-slider-react";
 
 function Home() {
   const projects = {
-    "web": 24,
-    "mobile": 43,
+    "web": 124,
+    "mobile": 83,
   };
 
   const settings = {
