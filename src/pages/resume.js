@@ -65,9 +65,7 @@ function Resume() {
               <p className="mb-2">
                 <span className="font-weight-bold text-orange">Email:</span> <br />herniejabien45@gmail.com
                                         </p>
-              <p className="mb-2">
-                <span className="font-weight-bold text-orange">Birth date:</span> <br />October 11, 1999
-                                        </p>
+              
               <p className="mb-2">
                 <span className="font-weight-bold text-orange">Address:</span> <br />Cagayan de Oro, Misamis Oriental Philippines
                                         </p>
