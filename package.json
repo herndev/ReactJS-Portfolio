@@ -19,8 +19,7 @@
     "scripts": {
         "start": "react-scripts start",
         "cleanBuild": "rimraf ./build/*",
-    "build": "npm run cleanBuild && set \"GENERATE_SOURCEMAP=false\" && react-scripts build ",
-        // "build": "GENERATE_SOURCEMAP=false react-scripts build",
+        "build": "npm run cleanBuild && set \"GENERATE_SOURCEMAP=false\" && react-scripts build ",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
     },
