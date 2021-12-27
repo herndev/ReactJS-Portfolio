@@ -1,78 +1,16 @@
-import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import './App.css';
-import Nav from './components/nav';
-import SideBar from './components/sidebar';
-import ContactForm from './components/contactform';
-import Home from './pages/home';
-import Resume from './pages/resume';
-import Portfolio from './pages/portfolio';
-import Contact from './pages/contact';
-import Footer from './components/footer';
-
-import firebase from "firebase";
-import "firebase/firestore";
-import axios from "axios";
-
-if (!firebase.apps.length) {
-  firebase.initializeApp({
-    apiKey: "AIzaSyBP5irIMqqbygH8YR_4fc2q_87DIoTdvtk",
-    authDomain: "mainlogs-745df.firebaseapp.com",
-    projectId: "mainlogs-745df",
-    storageBucket: "mainlogs-745df.appspot.com",
-    messagingSenderId: "294939388548",
-    appId: "1:294939388548:web:3b9c82799456accd0330d1",
-  });
-} else {
-  firebase.app(); // if already initialized, use that one
-}
-
-const firestore = firebase.firestore();
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import "./App.css";
+import Nav from "./components/nav";
+import SideBar from "./components/sidebar";
+import ContactForm from "./components/contactform";
+import Home from "./pages/home";
+import Resume from "./pages/resume";
+import Portfolio from "./pages/portfolio";
+import Contact from "./pages/contact";
+import Footer from "./components/footer";
 
 function App() {
-	const dataRef = firestore.collection("logs");
-
-  // INSERT DATA
-  const insertRecord = async (title, myip) => {
-    const timestamp = Date.now(); // This would be the timestamp you want to format
-    var time = new Intl.DateTimeFormat("en-US", {
-      year: "numeric",
-      month: "2-digit",
-      day: "2-digit",
-      hour: "2-digit",
-      minute: "2-digit",
-      second: "2-digit",
-    }).format(timestamp);
-
-    var url = window.location.href;
-    var route = window.location.pathname;
-
-    var path = url.substr(0, url.length - 1);
-    path += route;
-
-    var webdata = {
-      url: url,
-      route: route,
-      path: path,
-      title: title,
-      timestamp: time,
-      ip: myip,
-    };
-
-    await dataRef.add(webdata);
-  };
-
-  //creating function to load ip address from the API
-  const getData = async () => {
-    const res = await axios.get("https://geolocation-db.com/json/");
-    return res.data.IPv4;
-  };
-
-  useEffect(async () => {
-    var title = document.title;
-    var myip = await getData();
-    insertRecord(title, myip);
-  }, []);
   return (
     <Router>
       <div className="container mb-5">
@@ -101,7 +39,7 @@ function App() {
           </div>
         </div>
       </div>
-    </Router >
+    </Router>
   );
 }
 
