@@ -6,7 +6,7 @@ function Contact() {
         <div id="contact" className="">
             <section className="p-3">
                 <h4 className="font-weight-bold text-primary-default display-inline">
-                    Contact
+                    Contact 
                 </h4>
 
                 <ContactForm />
