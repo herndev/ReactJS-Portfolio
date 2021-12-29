@@ -10,13 +10,11 @@ This project was built using
 - <b>Tiny-slider</b> ( Interactive and responsive carousel )
 - <b>Emailjs</b> ( Email service )
 <br />
-<br />
 
 ## Getting Started
 ### Dependencies:
 - <b>Nodejs</b>
 ( Install [nodejs](https://nodejs.org/en/) )
-<br />
 <br />
 
 ### In the project directory, you can run:
