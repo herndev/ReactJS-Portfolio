@@ -7,7 +7,7 @@ function ContactForm() {
   var sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_p3bfvq8', 'template_i5umn44', e.target, 'user_9pofpzKwEJ94jh4BSM9PR')
+    emailjs.sendForm(process.env.REACT_APP_service, process.env.REACT_APP_template, e.target, process.env.REACT_APP_user)
       .then((result) => {
         alert("Message sent\n Status: " + result.text);
       }, (error) => {
