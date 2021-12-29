@@ -9,13 +9,11 @@ This project was built using
 - <b>Bootstrap</b> ( Responsive and materialized design )
 - <b>Tiny-slider</b> ( Interactive and responsive carousel )
 - <b>Emailjs</b> ( Email service )
-<br />
 
 ## Getting Started
 ### Dependencies:
 - <b>Nodejs</b>
 ( Install [nodejs](https://nodejs.org/en/) )
-<br />
 
 ### In the project directory, you can run:
 `npm install`
