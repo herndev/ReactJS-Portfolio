@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Sidebar
 function SideBar() {
     return (
         <div className="glass-card side-bar">
