@@ -25,6 +25,11 @@ function Nav() {
                   Portfolio
                 </NavLink>
               </li>
+              {/* <li className="list-inline-item m-0">
+                <NavLink to="/blog" className="display-centery px-4 nav-item nav-link visible-md pt-2" activeClassName="nav-menu-active">
+                  Blog
+                </NavLink>
+              </li> */}
               <li className="list-inline-item m-0">
                 <NavLink to="/contact" className="display-centery px-4 nav-item nav-link visible-md pt-2" activeClassName="nav-menu-active">
                   Contact
@@ -39,7 +44,7 @@ function Nav() {
                 <li className="list-inline-item"><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/herndev"><i className="ion-social-twitter"></i></a></li>
                 <li className="list-inline-item"><a target="_blank" rel="noopener noreferrer" href="https://instagram.com/hern.dev"><i className="ion-social-instagram"></i></a></li>
               </ul>
-              <a href="mailto:herniejabien45@gmail.com" className="btn btn-success m-2 font-weight-bold crv-25 px-3">Hire Me !</a>
+              <a href="https://ko-fi.com/herndev" target="_" className="btn btn-success m-2 font-weight-bold crv-25 px-3">Support Me</a>
             </div>
           </div>
         </div>
