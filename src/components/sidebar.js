@@ -41,4 +41,6 @@ function SideBar() {
     );
 }
 
+
+// Export sidebar
 export default SideBar;
