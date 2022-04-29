@@ -4,6 +4,10 @@
 <br />
 <br />
 
+---
+Simple materialize portfolio built in ReactJS
+---
+
 This project was built using 
 - <b>ReactJS</b> ( Easy to build front-end framework )
 - <b>Bootstrap</b> ( Responsive and materialized design )
