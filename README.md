@@ -3,7 +3,7 @@
 <img src="./public/img/Screenshot.png" />
 <br />
 <br />
-
+ 
 ---
 Simple materialize portfolio built in ReactJS
 ---
