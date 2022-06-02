@@ -60,9 +60,6 @@ function Resume() {
                 <span className="font-weight-bold text-orange">Name:</span> <br />Hernie M. Jabien Jr.
                                         </p>
               <p className="mb-2">
-                <span className="font-weight-bold text-orange">Phone:</span> <br />+639397724280
-                                        </p>
-              <p className="mb-2">
                 <span className="font-weight-bold text-orange">Email:</span> <br />herniejabien45@gmail.com
                                         </p>
               
