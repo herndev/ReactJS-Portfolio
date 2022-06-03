@@ -64,14 +64,21 @@ function Resume() {
                                         </p>
               
               <p className="mb-2">
-                <span className="font-weight-bold text-orange">Address:</span> <br />Cagayan de Oro, Misamis Oriental Philippines
+                <span className="font-weight-bold text-orange">Address:</span> <br />Philippines
                                         </p>
             </div>
           </div>
           <div className="col-md-6">
             <div className="crv-8 overflow-hidden">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d126293.44490128885!2d124.59075304177426!3d8.434015933820442!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32fff2d9810e9e81%3A0x2edcd5b84a6de2a2!2sCagayan%20de%20Oro%2C%20Misamis%20Oriental!5e0!3m2!1sen!2sph!4v1611891257630!5m2!1sen!2sph"
-                width="100%" title="location" height="450" aria-hidden="false" tabIndex="0"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8001437.034457866!2d122.62175425!3d11.69783515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x324053215f87de63%3A0x784790ef7a29da57!2sPhilippines!5e0!3m2!1sen!2sph!4v1654218651267!5m2!1sen!2sph"
+                width="600"
+                height="450"
+                style={{ border: "0" }}
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
         </div>
