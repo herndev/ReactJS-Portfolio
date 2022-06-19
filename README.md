@@ -28,3 +28,7 @@ To install necessary packages
 `npm start`
 
 To run the project locally
+
+//   .--.
+// >(*  _)
+// (______)<
