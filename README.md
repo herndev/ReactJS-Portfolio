@@ -29,6 +29,8 @@ To install necessary packages
 
 To run the project locally
 
-//   .--.
-// >(*  _)
-// (______)<
+<!--
+     .--.
+   >(*  _)
+   (______)<
+-->
