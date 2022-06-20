@@ -3,7 +3,8 @@ import emailjs from 'emailjs-com';
 
 function ContactForm() {
 
-  // Send email
+  // Send via email using emailjs
+  // prevent form default action
   var sendEmail = (e) => {
     e.preventDefault();
 
